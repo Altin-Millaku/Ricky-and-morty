@@ -1,0 +1,147 @@
+.App {
+  width: 100vw;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.filters,
+.sorter {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filters select,
+.sorter button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.character-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 1rem;
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.character-card h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.character-card p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+footer {
+  position: sticky;
+  bottom: 0; /* Sticks to the bottom when scrolling */
+  width: 100vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Header styling */
+header {
+  width: 100vw;
+  position: sticky; /* Makes the header stick to the top */
+  top: 0; /* Position it at the very top of the viewport */
+  z-index: 1000; /* Ensure the header stays above other content */
+  background-color: black; /* Green background */
+  color: white; /* White text */
+  padding: 20px; /* Padding around the content */
+  text-align: center; /* Center the text */
+  box-shadow: 1px 7px 20px 3px rgb(23 189 67 / 72%);
+  margin-bottom: 50px;
+}
+
+/* Header title (h1) styling */
+header h1 {
+  font-size: 2.5rem; /* Large font size for the title */
+  margin: 0; /* Remove default margin */
+  padding-bottom: 10px; /* Add spacing below the title */
+}
+
+/* Controls section (filters and sorter) */
+header .controls {
+  display: flex;
+  justify-content: center; /* Center align controls horizontally */
+  gap: 20px; /* Space between filter and sorter */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 10px; /* Add some spacing above controls */
+}
+
+/* Filters section */
+header .filters select,
+header .sorter button {
+  padding: 10px; /* Add padding for clickable area */
+  font-size: 1rem; /* Font size for readability */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* White background for inputs */
+  color: #333; /* Text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for inputs */
+  cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
+/* Add hover effect for inputs */
+header .filters select:hover,
+header .sorter button:hover {
+  background-color: #e0e0e0; /* Light gray background on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  header .controls {
+    flex-direction: column; /* Stack controls vertically */
+    gap: 10px; /* Reduce gap on mobile */
+  }
+}
+
+.ArrowButton{
+  border: none;
+  background: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
